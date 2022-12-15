@@ -1,12 +1,12 @@
 import React from "react";
 import Navigation from "../navigation/Navigation";
-import HorizontalRule from "../horizontalRule/HorizontalRule";
+import PromoBanner from "../promoBanner/PromoBanner";
 
 const Layout = () => {
 	return (
 		<>
 			<Navigation />
-			<HorizontalRule />
+			<PromoBanner />
 		</>
 	);
 };
