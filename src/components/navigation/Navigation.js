@@ -1,6 +1,6 @@
 import React from "react";
-import HorizontalRule from "../horizontalRule/HorizontalRule";
-import Menu from "../navigation/Menu";
+import HorizontalRule from "../HorizontalRule/HorizontalRule";
+import Menu from "./Menu";
 
 const Navigation = () => {
 	return (

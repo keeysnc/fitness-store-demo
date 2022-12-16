@@ -1,5 +1,5 @@
 import React from "react";
-import HorizontalRule from "../horizontalRule/HorizontalRule";
+import HorizontalRule from "../HorizontalRule/HorizontalRule";
 
 const PromoBanner = () => {
 	return (

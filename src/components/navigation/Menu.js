@@ -1,5 +1,5 @@
 import React from "react";
-import CartIcon from "../cart/cartIcon";
+import CartIcon from "./cartIcon";
 
 const Menu = () => {
 	return (
