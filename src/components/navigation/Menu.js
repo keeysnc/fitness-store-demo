@@ -6,13 +6,13 @@ const Menu = () => {
 		<div className="flex flex-row justify-between w-96">
 			<ul className="flex flex-row space-x-4">
 				<li>
-					<a href="#">Shop</a>
+					<a href="/">Shop</a>
 				</li>
 				<li>
-					<a href="#">Blog</a>
+					<a href="/blog">Blog</a>
 				</li>
 				<li>
-					<a href="#">About</a>
+					<a href="/demo">Demo</a>
 				</li>
 			</ul>
 

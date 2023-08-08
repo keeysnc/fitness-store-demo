@@ -1,9 +1,10 @@
 import React from "react";
+import { horizontalRuleStyles } from "./horizontalRuleStyles";
 
-const HorizontalRule = () => {
+const HorizontalRule = ({ children }) => {
 	return (
 		<>
-			<div className="border-b-2 border-black pt-6"></div>
+			<div className={horizontalRuleStyles.styles}>{children}</div>
 		</>
 	);
 };

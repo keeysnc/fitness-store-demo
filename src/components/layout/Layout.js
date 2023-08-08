@@ -1,15 +1,16 @@
 import React from "react";
 import Navigation from "../Navigation/Navigation";
 import PromoBanner from "../PromoBanner/PromoBanner";
-import Home from "../../pages/Home";
+import Footer from "../Footer/Footer";
 
-const Layout = () => {
+const Layout = ({ children }) => {
 	return (
-		<>
+		<div className="layout">
 			<Navigation />
 			<PromoBanner />
-			<Home />
-		</>
+			{children}
+			<Footer />
+		</div>
 	);
 };
 

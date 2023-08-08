@@ -1,82 +1,110 @@
 [
 	{
 		"id": 1,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
+		"product_name": "Athletic Tank",
+		"price": "$48.00",
 		"category": "Tops",
-		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"colors": ["Blue"],
+		"sizes": ["sm", "md", "lg", "xl"],
+		"featureImg": "",
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2980&q=80"
 	},
 	{
 		"id": 2,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Combo Tanks",
+		"price": "$100.00",
+		"category": "Outfit",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["lg"],
+		"featureImg": "",
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1609377375732-7abb74e435d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 	},
 	{
 		"id": 3,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Tank & Joggers",
+		"price": "$120.00",
+		"category": "Outfit",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["sm", "md", "lg", "xl"],
+		"featureImg": "",
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1584863495140-a320b13a11a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=746&q=80"
 	},
 	{
 		"id": 4,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Stretch Athletic Shorts",
+		"price": "$36.00",
+		"category": "Bottoms",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["sm", "md", "lg", "xl"],
+		"featureImg": "",
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1620371350502-999e9a7d80a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=740&q=80"
 	},
 	{
 		"id": 5,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Mesh Athletic Suit",
+		"price": "$100.00",
+		"category": "Outfit",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["sm", "md", "lg", "xl"],
+		"featureImg": "",
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1606902965551-dce093cda6e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
 	},
 	{
 		"id": 6,
-		"product_name": "Demo T-shirt",
+		"product_name": "Flex Tee",
 		"price": "$28.00",
 		"category": "Tops",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["md", "lg", "xl"],
+		"feature": true,
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1600679472183-07cc4f68b140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 	},
 	{
 		"id": 7,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Flex Joggers",
+		"price": "$48.00",
+		"category": "Bottoms",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["md", "lg", "xl"],
+		"collections": ["nike", "adidas"],
+		"url": "https://images.unsplash.com/photo-1609858922179-97a3c4980b80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
 	},
 	{
 		"id": 8,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
+		"product_name": "Mesh Muscle Shirt",
+		"price": "$48.00",
 		"category": "Tops",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["sm", "md", "lg", "xl"],
+		"collections": ["nike"],
+		"feature": true,
+		"url": "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 	},
 	{
 		"id": 9,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "White Trainers",
+		"price": "$120.00",
+		"category": "Shoes",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["md", "lg", "xl"],
+		"collections": ["nike"],
+		"url": "https://images.unsplash.com/photo-1559166926-d0b0a9a4704f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
 	},
 	{
 		"id": 10,
-		"product_name": "Demo T-shirt",
-		"price": "$28.00",
-		"category": "Tops",
+		"product_name": "Black Trainers",
+		"price": "$140.00",
+		"category": "Shoes",
 		"colors": ["Blue", "Black", "White"],
-		"sizes": ["sm", "md", "lg", "xl"]
+		"sizes": ["sm", "md", "lg", "xl"],
+		"feature": true,
+		"collections": ["nike"],
+		"url": "https://images.unsplash.com/photo-1529925692078-9eca152749cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
 	}
 ]

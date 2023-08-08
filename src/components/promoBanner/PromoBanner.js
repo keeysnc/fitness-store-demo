@@ -1,18 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import HorizontalRule from "../HorizontalRule/HorizontalRule";
+import { promoBannerStyles } from "./promoBannerStyles";
+import { bannerExitBtn } from "../../assets/Icons";
 
 const PromoBanner = () => {
+	const [hide, setHide] = useState(false);
+
+	const removeBanner = () => {
+		setHide(!hide);
+	};
+
 	return (
-		<div>
-			<wrapper className="container bg-white flex flex-row justify-between pt-6  mx-auto text-base">
-				<div className="flex flex-row">
-					<p>
-						<span className="font-bold">BLACK FRIDAY SALE!</span> GET 10% OFF ALL PRODUCTS.{" "}
-						<span className="underline underline-offset-8 font-bold">SHOP NOW</span>
-					</p>
+		<div className={hide && "hidden"}>
+			<HorizontalRule>
+				<div className={promoBannerStyles.promo_banner_container}>
+					<div className="flex flex-row">
+						<p>
+							<span className="font-bold">BLACK FRIDAY SALE!</span> GET 10% OFF ALL PRODUCTS.{" "}
+							<a href="/">
+								<span className="underline underline-offset-8 font-bold">SHOP NOW</span>
+							</a>
+						</p>
+					</div>
+					<div onClick={removeBanner} className="cursor-pointer">
+						{bannerExitBtn()}
+					</div>
 				</div>
-			</wrapper>
-			<HorizontalRule />
+			</HorizontalRule>
 		</div>
 	);
 };
