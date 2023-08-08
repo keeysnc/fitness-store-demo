@@ -7,7 +7,7 @@ const Navigation = () => {
 			<div className="container bg-white flex flex-row justify-between pt-6 pb-6 mx-auto text-base">
 				<div className="flex flex-row">
 					<span>
-						<a href="/">Demo Storefront</a>
+						<a href="/">WELLNESS APPAREL</a>
 					</span>
 				</div>
 				<Menu />
