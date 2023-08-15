@@ -6,10 +6,10 @@ import React from "react";
 const Layout = ({ children }) => {
 	return (
 		<div className="layout">
-			<Navigation />
-			<PromoBanner />
+			{/* <Navigation />
+			<PromoBanner /> */}
 			{children}
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 };
