@@ -13,21 +13,21 @@ import Shipping from "./pages/Shipping";
 
 function App() {
 	return (
-		<Layout>
-			<BrowserRouter>
-				<Routes>
-					<Route index element={<Home />} />
-					<Route path="/product/:id" element={<ProductDetails />} />
-					<Route path="/demo" element={<Demo />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/blog/:id" element={<BlogPost />} />
-					<Route path="/bag" element={<Checkout />} />
-					<Route path="/returns" element={<Returns />} />
-					<Route path="/payment-methods" element={<PaymentMethods />} />
-					<Route path="/shipping" element={<Shipping />} />
-				</Routes>
-			</BrowserRouter>
-		</Layout>
+		// <Layout>
+		<BrowserRouter>
+			<Routes>
+				<Route index element={<Home />} />
+				<Route path="/product/:id" element={<ProductDetails />} />
+				<Route path="/demo" element={<Demo />} />
+				<Route path="/blog" element={<Blog />} />
+				<Route path="/blog/:id" element={<BlogPost />} />
+				<Route path="/bag" element={<Checkout />} />
+				<Route path="/returns" element={<Returns />} />
+				<Route path="/payment-methods" element={<PaymentMethods />} />
+				<Route path="/shipping" element={<Shipping />} />
+			</Routes>
+		</BrowserRouter>
+		// </Layout>
 	);
 }
 
