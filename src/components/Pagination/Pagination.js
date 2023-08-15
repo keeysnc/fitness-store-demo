@@ -1,5 +1,4 @@
 import React from "react";
-import { lowerCase } from "lodash";
 import { Link } from "react-router-dom";
 
 const Pagination = ({ category, name }) => {
