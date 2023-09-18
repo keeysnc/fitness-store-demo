@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import HalfLayout from "../components/Layout/HalfLayout";
+import HalfLayout from "../components/Layouts/HalfLayout";
 import Pagination from "../components/Pagination/Pagination";
 import { exitBtn, productColor } from "../assets/Icons";
 import { getProducts } from "../utils/utils";

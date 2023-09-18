@@ -1,6 +1,6 @@
 import "index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout/Layout";
+import Layout from "../components/Layouts/Layout";
 import Home from "./Home";
 import ProductDetails from "./ProductDetails";
 import Checkout from "./Checkout";

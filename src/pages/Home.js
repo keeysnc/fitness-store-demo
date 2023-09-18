@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ProductCard from "../components/Products/ProductCard";
 import { getProducts } from "../utils/utils";
-import OneForthLayout from "../components/Layout/OneForthLayout";
-import ThreeForthLayout from "../components/Layout/ThreeForthLayout";
+import OneForthLayout from "../components/Layouts/OneForthLayout";
+import ThreeForthLayout from "../components/Layouts/ThreeForthLayout";
 import CategoryFilter from "../components/Filters/CategoryFilter";
 
 const Home = () => {

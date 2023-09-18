@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HalfLayout from "../../components/Layout/HalfLayout";
+import HalfLayout from "../Layouts/HalfLayout";
 import { blogCardStyles } from "./blogCardStyles";
 
 const BlogCard = ({ ...props }) => {
