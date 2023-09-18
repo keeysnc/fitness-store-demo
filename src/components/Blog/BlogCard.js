@@ -5,18 +5,20 @@ import { blogCardStyles } from "./blogCardStyles";
 
 const BlogCard = ({ ...props }) => {
 	return (
-		<div className={blogCardStyles.blogcard_container}>
-			<HalfLayout>
-				<p>{props.category}</p>
-				<Link to={`/blog/${props.path}`}>
-					<p className={blogCardStyles.blogcard_title}>{props.title}</p>
-				</Link>
-				<p>{props.caption}</p>
-			</HalfLayout>
-			<HalfLayout>
-				<img alt={props.title} className={blogCardStyles.blogcard_img} src={props.imgUrl}></img>
-			</HalfLayout>
-		</div>
+		<>
+			<div className={blogCardStyles.blogcard_container}>
+				<HalfLayout>
+					<p>{props.category}</p>
+					<Link to={`/blog/${props.path}`}>
+						<p className={blogCardStyles.blogcard_title}>{props.title}</p>
+					</Link>
+					<p>{props.caption}</p>
+				</HalfLayout>
+				<HalfLayout>
+					<img alt={props.title} className={blogCardStyles.blogcard_img} src={props.imgUrl}></img>
+				</HalfLayout>
+			</div>
+		</>
 	);
 };
 
