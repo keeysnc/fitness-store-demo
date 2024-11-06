@@ -34,11 +34,7 @@ const SortByFilter = () => {
 				key={key}
 				name={option}
 				value={option}
-				className={
-					key === 5
-						? `option-${key} p-2 ${filterStyles.sort_filter.option}`
-						: `border-b border-black option-${key} p-2 ${filterStyles.sort_filter.option}`
-				}
+				className={key === 5 ? `option-${key} p-2 ${filterStyles.sort_filter.option}` : ` option-${key} p-2 ${filterStyles.sort_filter.option}`}
 			>
 				{option}
 			</li>
@@ -60,7 +56,7 @@ const SortByFilter = () => {
 					</span> */}
 				</div>
 
-				<ul id="sort-dropdown" className={`${openDropdown ? `border border-black flex flex-col absolute z-10 bg-white` : `hidden`} `}>
+				<ul id="sort-dropdown" className={`${openDropdown ? `border  flex flex-col absolute z-10 bg-white` : `hidden`} `}>
 					{options}
 				</ul>
 			</div>

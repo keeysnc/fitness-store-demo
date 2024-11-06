@@ -9,7 +9,7 @@ export const getPosts = () => {
 };
 
 export const createPromoBanner = (promoText) => {
-	const classNames = "flex items-center border-t-2 border-b-2 border-black";
+	const classNames = "flex items-center";
 
 	const duplicatePromoText = (text) => {
 		let textArray = [];

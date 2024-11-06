@@ -26,7 +26,7 @@ const ProductDetails = () => {
 							<div className="lg:flex lg:flex-row pb-15">
 								<HalfLayout>
 									<div className="product-details-img">
-										<img className="object-cover object-center w-full h-128" alt="detail-img" src={item.url} />
+										<img className="object-cover object-center w-full h-full" alt="detail-img" src={item.url} />
 									</div>
 									{/* <div className="thumbnail pl-8 py-8 flex-row flex space-x-4 sm:px-25">
 										<img
@@ -69,7 +69,7 @@ const ProductDetails = () => {
 												<span className="font-bold pr-2">Quantity:</span>
 												<input type="number" pattern="\d*" maxlength="4" placeholder="0"></input>
 											</p>
-											<button className="text-h4 px-12 mt-8 py-4 border-2 border-black">Add to Bag</button>
+											<button className="px-8 mt-4 py-4">Add to Bag</button>
 										</form>
 									</div>
 								</HalfLayout>

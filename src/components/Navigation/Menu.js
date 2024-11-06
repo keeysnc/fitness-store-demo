@@ -6,7 +6,7 @@ const Menu = () => {
 		<div className="flex flex-row justify-between w-96">
 			<ul className="flex flex-row space-x-4">
 				<li>
-					<a href="/">Shop</a>
+					<a href="/shop">Shop</a>
 				</li>
 				<li>
 					<a href="/blog">Blog</a>

@@ -11,9 +11,9 @@ const PromoBanner = () => {
 	};
 
 	return (
-		<div className={hide && "hidden"}>
+		<div className={`bg-black text-white ${hide && "hidden"}`}>
 			<HorizontalRule>
-				<div className={promoBannerStyles.promo_banner_container}>
+				<div className={`${promoBannerStyles.promo_banner_container}`}>
 					<div className="flex flex-row">
 						<p>
 							<span className="font-bold">BLACK FRIDAY SALE!</span> GET 10% OFF ALL PRODUCTS.{" "}

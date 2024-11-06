@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 
 const Layout = ({ children }) => {
 	return (
-		<div className="layout">
+		<div className="layout font-body">
 			<Navigation />
 			<PromoBanner />
 			{children}

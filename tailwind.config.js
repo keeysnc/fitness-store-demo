@@ -2,6 +2,11 @@
 module.exports = {
 	content: ["./src/**/*.{js,jsx,ts,tsx}"],
 	theme: {
+		fontFamily: {
+			sans: ["Roboto", "sans-serif"],
+			custom: ["acumin-pro", "sans-serif"],
+			custom2: ["bebas-neue", "sans-serif"],
+		},
 		fontSize: {
 			sm: "0.8rem",
 			base: "1rem",

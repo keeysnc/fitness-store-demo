@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://use.typekit.net/jmp3nse.css");
+
+body {
+	font-family: "Playfair Display", serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1 {
+	font-family: "bebas-neue", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3rem;
+	line-height: 3rem;
+}
+
+.gridLines,
+.gridCircle {
+	position: relative;
+}
+
+.gridLines::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 1px;
+	height: 100%;
+	z-index: 13;
+	background: #a6a6a6;
+}
+
+.gridLines::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 75%;
+	width: 1px;
+	height: 100%;
+	z-index: 13;
+	background: #a6a6a6;
+}
+
+.gridCircle::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 50%;
+	height: 100%;
+	z-index: 13;
+	border: solid #a6a6a6 1px;
+	border-radius: 50%;
+}
+
+.smallGridLines:first-child,
+.smallGridLines:last-child {
+	position: relative;
+}
+
+.smallGridLines:first-child:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 13;
+	border: solid #a6a6a6 1px;
+	border-radius: 50%;
+}
+
+.smallGridLines:last-child:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	z-index: 13;
+	background: #a6a6a6;
+}
+
+.textUnderline {
+	position: relative;
+}
+
+.textUnderline::after {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 20%;
+	height: 2px;
+	background: white;
+}
+
+.ripple-effect {
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	position: relative;
+}
+
+.ripple-effect img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.3s ease;
+	animation: none;
+}
+
+.ripple-effect:hover img {
+	animation: ripple 0.8s ease-in-out;
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(1);
+		filter: blur(0);
+	}
+	50% {
+		transform: scale(1.05);
+		filter: blur(2px);
+	}
+	100% {
+		transform: scale(1);
+		filter: blur(0);
+	}
+}
+
+@keyframes wave {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-10px) translateX(5px) rotate(-2deg);
+	}
+	50% {
+		transform: translateY(0) translateX(-5px) rotate(2deg);
+	}
+	75% {
+		transform: translateY(10px) translateX(5px) rotate(-2deg);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

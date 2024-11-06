@@ -6,8 +6,10 @@ import Footer from "../components/Footer/Footer";
 const Layout = ({ children }) => {
 	return (
 		<div className="layout">
+			<span className="gridLine1"></span>
+			<span className="gridLine2"></span>
 			<Navigation />
-			<PromoBanner />
+			{/* <PromoBanner /> */}
 			{children}
 			<Footer />
 		</div>

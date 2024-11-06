@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const CategoryFilter = ({ handleCategorySort }) => {
 	const categoryList = [
-		{ name: "All", path: "/" },
-		{ name: "Tops", path: "/?category=tops" },
-		{ name: "Bottoms", path: "/?category=bottoms" },
-		{ name: "Outfit", path: "/?category=outfits" },
-		{ name: "Shoes", path: "/?category=shoes" },
+		{ name: "All", path: "/shop" },
+		{ name: "Tops", path: "/shop?category=tops" },
+		{ name: "Bottoms", path: "/shop?category=bottoms" },
+		{ name: "Outfit", path: "/shop?category=outfits" },
+		{ name: "Shoes", path: "/shop?category=shoes" },
 	];
 
 	const categories = categoryList.map((category) => {
