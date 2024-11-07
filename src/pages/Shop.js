@@ -41,7 +41,7 @@ const Home = () => {
 
 	return (
 		<div>
-			<div className="container px-4 pt-12 mx-auto left-sidebar-layout flex flex-col md:flex-row">
+			<div className="container h-screen px-4 pt-12 mx-auto left-sidebar-layout flex flex-col md:flex-row">
 				<OneForthLayout>
 					<h2 className="sidebar-title text-h1 ">SHOP</h2>
 					<CategoryFilter handleCategorySort={handleCategorySort} />

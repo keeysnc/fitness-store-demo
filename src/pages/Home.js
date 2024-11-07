@@ -5,6 +5,7 @@ import ThreeForthLayout from "../components/Layouts/ThreeForthLayout";
 import Cover from "../components/Cover/Cover";
 import Modal from "src/components/Modal/Modal";
 import LookBookCard from "../components/Products/LookBookCard";
+import Video from "../components/Video/Video";
 const coverImg =
 	"https://images.unsplash.com/photo-1554244933-d876deb6b2ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2980&q=80";
 
@@ -37,7 +38,7 @@ const Home = () => {
 	return (
 		<div className="gridLines">
 			<Cover coverImg={coverImg} />
-			<div className="container pt-12 mx-auto flex flex-col ">
+			<div className="container pt-12 mx-auto flex flex-col">
 				<div className="relative">
 					<svg className="fixed top-0 right-[-100px]" width="300" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 						{/* Inner Circle */}
@@ -90,6 +91,24 @@ const Home = () => {
 					</div>
 					<br />
 					<div className="grid xl:grid-cols-3 gap-20 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2">{mapProductsCards}</div>
+				</ThreeForthLayout>
+			</div>
+			<Video src="./lookbookVideo.mp4" />
+			<div className="mx-auto flex flex-col ">
+				<ThreeForthLayout>
+					<div className="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mb-24">
+						<div className="borderLines"></div>
+						<div className="col-span-2 px-20">
+							<h1>"Empower Your Wellness: Discover Balance, Strength, and a Healthier You"</h1>
+							<p className="pt-2 ">
+								Elevate Your Wellness Journey: Our apparel is designed to support your every move, empowering you to live a healthy, balanced, and
+								active lifestyle. Feel confident, comfortable, and motivated as you embrace wellness in style—because feeling good is the first step
+								to living well.
+							</p>
+						</div>
+						<div className="borderLines"></div>
+						<div></div>
+					</div>
 				</ThreeForthLayout>
 			</div>
 		</div>
