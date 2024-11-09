@@ -7,7 +7,7 @@ const CategoryFilter = ({ handleCategorySort }) => {
 		{ name: "Tops", path: "/shop?category=tops" },
 		{ name: "Bottoms", path: "/shop?category=bottoms" },
 		{ name: "Outfit", path: "/shop?category=outfits" },
-		{ name: "Shoes", path: "/shop?category=shoes" },
+		{ name: "Shoes", path: "/?category=shoes" },
 	];
 
 	const categories = categoryList.map((category) => {
@@ -21,7 +21,7 @@ const CategoryFilter = ({ handleCategorySort }) => {
 	return (
 		<div className="category-filter">
 			<p className="font-bold pb-6 pt-6">BROWSE BY:</p>
-			<ul className="inline-block space-y-2 md:flex-row md:pb-6">{categories}</ul>
+			<ul className="inline-block space-y-2 md:flex-row pb-6 sm:flex-col ">{categories}</ul>
 		</div>
 	);
 };

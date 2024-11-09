@@ -17,7 +17,7 @@ const BlogPost = () => {
 			/>
 
 			<section className="w-2/4 m-auto py-15">
-				<h1 className="text-h3 pb-2">This is a blog post</h1>
+				<h1 className="pb-2">This is a blog post</h1>
 				<p>
 					Libero pharetra, odio elementum Libero pharetra, odio elementum lobortis proin. Turpis scelerisque ipsum, volutpat, urna arcu. Dis placerat
 					magna non nibh sed lobortis risus lacus. Massa eu laoreet nunc arcu. Id pretium fermentum turpis nec, natoque dapibus in. Eu tincidunt non

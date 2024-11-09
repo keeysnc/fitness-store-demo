@@ -53,6 +53,7 @@ const ThreeScene = () => {
 		const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 		const renderer = new THREE.WebGLRenderer({ antialias: true });
 
+		// Set initial renderer size
 		renderer.setSize(window.innerWidth, window.innerHeight);
 		mountRef.current.appendChild(renderer.domElement); // Append the renderer to the DOM
 
@@ -98,9 +99,21 @@ const ThreeScene = () => {
 		};
 		animate();
 
+		// Handle window resize event
+		const onWindowResize = () => {
+			// Update camera aspect ratio and renderer size
+			camera.aspect = window.innerWidth / window.innerHeight;
+			camera.updateProjectionMatrix();
+			renderer.setSize(window.innerWidth, window.innerHeight);
+		};
+
+		// Add resize event listener
+		window.addEventListener("resize", onWindowResize);
+
 		// Clean up on component unmount
 		return () => {
 			window.removeEventListener("mousemove", onMouseMove);
+			window.removeEventListener("resize", onWindowResize);
 			mountRef.current.removeChild(renderer.domElement); // Clean up renderer
 		};
 	}, []);

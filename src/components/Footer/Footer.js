@@ -12,7 +12,7 @@ const Footer = () => {
 				<div className={footerStyles.footer_bg}>
 					<div className={footerStyles.footer_container}>
 						<ul>
-							<li className="pb-2">Payment methods</li>
+							<li className="pb-2">Payment Methods</li>
 							<li className="pb-2">Shipping and Delivery</li>
 							<li className="pb-2">Return & Refund</li>
 						</ul>

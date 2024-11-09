@@ -1,31 +1,41 @@
 [
 	{
 		"id": "1",
-		"path": "test-post-1",
-		"title": "Training 1",
+		"path": "morning-workouts-vs-evening-workouts",
+		"title": "Morning Workouts vs. Evening Workouts: Which Is Best for You?",
 		"author": "Nathan Keeys",
-		"category": "New Product",
-		"caption": "Libero pharetra, odio elementum lobortis proin. Turpis scelerisque ipsum, volutpat, urna arcu. Dis placerat magna non nibh sed lobortis risus lacus. Massa eu laoreet nunc arcu. Id pretium fermentum turpis nec, natoque dapibus in. Eu tincidunt non sapien commodo. Enim sed vitae hac nibh quis consequat vitae.",
+		"category": "Fitness",
+		"caption": "One of the most common questions in fitness is whether it’s better to work out in the morning or the evening. While both times offer unique benefits, the best choice depends on your lifestyle, goals, and personal preferences. In this article, we’ll break down the advantages of morning and evening workouts to help you find the ideal time to exercise.",
 		"imgUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2062&q=80",
 		"featureImage": true
 	},
 	{
 		"id": "2",
-		"path": "test-post-2",
-		"title": "Training 2",
+		"path": "the-power-of-consistency-in-fitness-small-steps-big-results",
+		"title": "The Power of Consistency in Fitness: Small Steps, Big Results",
 		"author": "Nathan Keeys",
-		"category": "New Product 2",
-		"caption": "Libero pharetra, odio elementum lobortis proin. Turpis scelerisque ipsum, volutpat, urna arcu. Dis placerat magna non nibh sed lobortis risus lacus. Massa eu laoreet nunc arcu. Id pretium fermentum turpis nec, natoque dapibus in. Eu tincidunt non sapien commodo. Enim sed vitae hac nibh quis consequat vitae.",
+		"category": "Fitness",
+		"caption": "When it comes to fitness, one of the biggest challenges people face is staying consistent. We often expect quick results and can lose motivation if progress feels slow. However, consistency is the real secret to long-term fitness success. In this article, we’ll explore why sticking with a routine, even when it feels tough, can make all the difference in achieving your fitness goals.",
 		"imgUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2062&q=80",
 		"featureImage": true
 	},
 	{
 		"id": "3",
-		"path": "test-post-3",
-		"title": "Training 3",
+		"path": "why-strength-training-is-key-to-a-healthier-happier-you",
+		"title": "Why Strength Training Is Key to a Healthier, Happier You",
 		"author": "Nathan Keeys",
-		"category": "New Product 3",
-		"caption": "Libero pharetra, odio elementum lobortis proin. Turpis scelerisque ipsum, volutpat, urna arcu. Dis placerat magna non nibh sed lobortis risus lacus. Massa eu laoreet nunc arcu. Id pretium fermentum turpis nec, natoque dapibus in. Eu tincidunt non sapien commodo. Enim sed vitae hac nibh quis consequat vitae.",
+		"category": "Fitness",
+		"caption": "When many people think of fitness, they imagine long runs or high-intensity cardio sessions. However, strength training is just as important for achieving a well-rounded, healthy body. Whether you're new to fitness or a seasoned pro, incorporating strength training into your routine can bring transformative benefits for your body and mind. Here’s why strength training is essential and how it can improve your overall well-being.",
+		"imgUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2062&q=80",
+		"featureImage": true
+	},
+	{
+		"id": "4",
+		"path": "five-essential-tips-to-kickstart-your-fitness-journey",
+		"title": "5 Essential Tips to Kickstart Your Fitness Journey",
+		"author": "Nathan Keeys",
+		"category": "Fitness",
+		"caption": "Starting a fitness journey can be exciting yet challenging. Whether you're a beginner or getting back into a routine, it’s crucial to set yourself up for success with sustainable habits. In this post, we’ll cover five essential tips to help you stay motivated, build a strong foundation, and achieve long-lasting results.",
 		"imgUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2062&q=80",
 		"featureImage": true
 	}
