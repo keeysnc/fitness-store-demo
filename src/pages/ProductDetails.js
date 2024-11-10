@@ -44,7 +44,7 @@ const ProductDetails = () => {
 										</p>
 										<br />
 										<form>
-											<button className="border-black border-2 text-black hover:bg-black hover:text-white px-8 mt-4 py-4">Add to Bag</button>
+											<button className="text-black border-2 border-black px-8 mt-4 py-4">Checkout features coming soon</button>
 										</form>
 									</div>
 								</HalfLayout>

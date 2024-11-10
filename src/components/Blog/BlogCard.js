@@ -27,20 +27,22 @@ const BlogCard = ({ ...props }) => {
 	}, []);
 
 	return (
-		<div className={blogCardStyles.blogcard_container} ref={containerRef}>
-			<HalfLayout>
-				<img alt={props.title} className={blogCardStyles.blogcard_img} src={props.imgUrl} ref={imageRef} />
-			</HalfLayout>
-			<HalfLayout>
-				<p ref={textRef}>{props.category}</p>
-				<Link to={`/blog/${props.path}`}>
+		<Link to={`/blog/${props.path}`} className={blogCardStyles.blogcard_link}>
+			<div className={blogCardStyles.blogcard_container} ref={containerRef}>
+				<HalfLayout>
+					<img alt={props.title} className={blogCardStyles.blogcard_img} src={props.imgUrl} ref={imageRef} />
+				</HalfLayout>
+				<HalfLayout>
+					<p className="text-gray-600 italic" ref={textRef}>
+						{props.category}
+					</p>
 					<h1 className={blogCardStyles.blogcard_title} ref={titleRef}>
 						{props.title}
 					</h1>
-				</Link>
-				<p ref={captionRef}>{props.caption}</p>
-			</HalfLayout>
-		</div>
+					<p ref={captionRef}>{props.caption}</p>
+				</HalfLayout>
+			</div>
+		</Link>
 	);
 };
 

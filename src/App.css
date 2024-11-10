@@ -7,7 +7,7 @@ body {
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	color: rgb(31, 31, 31);
+	color: #4b5563;
 }
 
 h1 {
@@ -184,4 +184,17 @@ h4 {
 	100% {
 		transform: translateY(0);
 	}
+}
+
+.cursor-ring {
+	position: absolute;
+	width: 50px; /* Size of the ring */
+	height: 50px;
+	border: 2px solid #000; /* Ring border color */
+	border-radius: 50%;
+	pointer-events: none; /* Prevent interaction with elements behind the cursor */
+	transform: translate(-50%, -50%); /* Center the ring at the cursor position */
+	opacity: 0.8; /* Opacity of the ring */
+	z-index: 9999; /* Make sure it appears above everything else */
+	transition: transform 0.1s ease; /* Smooth the transition when moving */
 }

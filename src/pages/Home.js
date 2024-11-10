@@ -123,10 +123,7 @@ const Home = () => {
 			<div className="container pt-10 md:pt-20 px-4 mx-auto flex flex-col">
 				<ThreeForthLayout>
 					<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
-						<img src={productInfo?.product_url} alt={productInfo?.product_name} />
-						<h2 className="text-lg pt-2 font-semibold">{productInfo?.product_name}</h2>
-						<p className="mt-2 text-gray-600">{productInfo?.product_price}</p>
-						<button className="border-black border-2 text-black hover:bg-black hover:text-white px-4 py-2 md:px-8 md:py-4 mt-4">Add to Bag</button>
+						<img src={productInfo?.product_url} alt={productInfo?.product_name} className="w-full h-full object-cover" />
 					</Modal>
 
 					<div className="grid gap-10 md:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-10 md:pb-20">{mapProductsCards}</div>

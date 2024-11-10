@@ -7,7 +7,7 @@ const CategoryFilter = ({ handleCategorySort }) => {
 		{ name: "Tops", path: "/shop?category=tops" },
 		{ name: "Bottoms", path: "/shop?category=bottoms" },
 		{ name: "Outfit", path: "/shop?category=outfits" },
-		{ name: "Shoes", path: "/?category=shoes" },
+		{ name: "Shoes", path: "/shop?category=shoes" },
 	];
 
 	const categories = categoryList.map((category) => {

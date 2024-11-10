@@ -14,22 +14,24 @@ import Demo from "./pages/Demo";
 
 function App() {
 	return (
-		<Layout>
-			<BrowserRouter>
-				<Routes>
-					<Route index element={<Home />} />
-					<Route path="/shop" element={<Shop />} />
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/demo" element={<Demo />} />
-					<Route path="/blog/:id" element={<BlogPost />} />
-					<Route path="/product/:id" element={<ProductDetails />} />
-					<Route path="/bag" element={<Checkout />} />
-					<Route path="/returns" element={<Returns />} />
-					<Route path="/payment-methods" element={<PaymentMethods />} />
-					<Route path="/shipping" element={<Shipping />} />
-				</Routes>
-			</BrowserRouter>
-		</Layout>
+		<>
+			<Layout>
+				<BrowserRouter>
+					<Routes>
+						<Route index element={<Home />} />
+						<Route path="/shop" element={<Shop />} />
+						<Route path="/blog" element={<Blog />} />
+						<Route path="/demo" element={<Demo />} />
+						<Route path="/blog/:path" element={<BlogPost />} />
+						<Route path="/product/:id" element={<ProductDetails />} />
+						<Route path="/bag" element={<Checkout />} />
+						<Route path="/returns" element={<Returns />} />
+						<Route path="/payment-methods" element={<PaymentMethods />} />
+						<Route path="/shipping" element={<Shipping />} />
+					</Routes>
+				</BrowserRouter>
+			</Layout>
+		</>
 	);
 }
 
