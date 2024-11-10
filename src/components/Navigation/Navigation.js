@@ -27,7 +27,7 @@ const Navigation = () => {
 
 	return (
 		<nav className="w-full bg-black text-white">
-			<div className="container flex flex-row items-center align-center justify-between pt-2 pb-2 mx-auto text-base">
+			<div className="container flex flex-row items-center align-center justify-between pt-2 pb-2 px-4 mx-auto text-base">
 				<div className="flex flex-row" ref={logoRef}>
 					<a href="/">
 						<svg width="75" height="75" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

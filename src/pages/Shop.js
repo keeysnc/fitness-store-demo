@@ -45,11 +45,11 @@ const Shop = () => {
 
 	return (
 		<div>
-			<div className="container min-h-screen px-4 pt-8 mx-auto flex flex-col md:flex-row">
+			<div className="container min-h-screen px-4 pt-20 mx-auto flex flex-col md:flex-row">
 				<OneForthLayout>
-					<h2 ref={titleRef} className="sidebar-title text-h1 text-2xl lg:text-3xl text-center md:text-left">
+					<h1 ref={titleRef} className="sidebar-title text-h1 text-2xl lg:text-3xl lg:text-left md:text-left sm:text-left">
 						SHOP
-					</h2>
+					</h1>
 					<div ref={filterRef} className="mt-4 md:mt-0">
 						<CategoryFilter handleCategorySort={handleCategorySort} />
 					</div>

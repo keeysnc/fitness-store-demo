@@ -111,7 +111,7 @@ const Cover = () => {
 	}, []);
 
 	return (
-		<div className="gridCircle w-full h-screen relative">
+		<div className="gridCircle w-full relative">
 			<div className={`${coverStyles.gridContainer} pt-[130px] gridLines relative grid-flow-* `}>{heroGrid}</div>
 			<Scene />
 		</div>

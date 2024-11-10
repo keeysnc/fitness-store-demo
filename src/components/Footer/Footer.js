@@ -3,7 +3,7 @@ import { createPromoBanner } from "../../utils/utils";
 import { footerStyles } from "./footerStyles";
 
 const Footer = () => {
-	const promoText = "FREE SHIPPING over $250";
+	const promoText = "FORWARD MOTION";
 
 	return (
 		<>
