@@ -50,16 +50,26 @@ const ProductCard = (props) => {
 				{/* Custom Audio Controls */}
 				<div className="mt-2">
 					{/* Play/Pause Button */}
-					<button onClick={toggleAudio} className="mr-2 px-4 py-2 bg-blue-500 text-white rounded-md">
+					<button onClick={toggleAudio} className="italic underline">
 						{isPlaying ? "Pause" : "Play"}
 					</button>
 
 					{/* Volume Control */}
-					<div className="flex items-center">
-						<label htmlFor="volume" className="mr-2">
+					<div className="flex items-center mt-2">
+						<label htmlFor="volume" className="mr-2 text-black mr-2">
 							Volume
 						</label>
-						<input type="range" id="volume" min="0" max="1" step="0.01" defaultValue="1" onChange={handleVolumeChange} className="w-24" />
+						{/* Styled Volume Slider */}
+						<input
+							type="range"
+							id="volume"
+							min="0"
+							max="1"
+							step="0.01"
+							defaultValue="1"
+							onChange={handleVolumeChange}
+							className="w-24 h-1 bg-black rounded-lg appearance-none cursor-pointer"
+						/>
 					</div>
 				</div>
 

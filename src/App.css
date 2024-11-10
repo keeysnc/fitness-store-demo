@@ -198,3 +198,28 @@ h4 {
 	z-index: 9999; /* Make sure it appears above everything else */
 	transition: transform 0.1s ease; /* Smooth the transition when moving */
 }
+
+/* Custom styles for the range input */
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 10px; /* Adjust the width of the knob */
+	height: 10px; /* Adjust the height of the knob */
+	background-color: black; /* Make the knob black */
+	border-radius: 50%; /* Make it round */
+	cursor: pointer;
+	border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+	width: 16px; /* Adjust the width of the knob */
+	height: 16px; /* Adjust the height of the knob */
+	background-color: black; /* Make the knob black */
+	border-radius: 50%; /* Make it round */
+	cursor: pointer;
+	border: none;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+	box-shadow: 0 0 0 2px #00f; /* Add a focus effect if you want */
+}
