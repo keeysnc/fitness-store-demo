@@ -9,12 +9,12 @@ const Menu = () => {
 					<a href="/">Home</a>
 				</li>
 				<li>
-					<a href="/shop">Shop</a>
+					<a href="/sounds">Sounds</a>
 				</li>
 				<li>
 					<a href="/blog">Community</a>
 				</li>
-				<CartIcon />
+				{/* <CartIcon /> */}
 			</ul>
 		</div>
 	);

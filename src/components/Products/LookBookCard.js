@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
 const ProductCard = (props) => {
-	let item = props.item;
-	const handleLookbookModalProducts = props.handleLookbookModalProducts;
+	console.log(props);
+	const item = props.item;
+	const audioRef = useRef(null); // Reference to the audio element
+	const [isPlaying, setIsPlaying] = useState(false); // Track the play/pause state
+
+	// Handle play and pause toggle
+	const toggleAudio = () => {
+		if (isPlaying) {
+			audioRef.current.pause();
+		} else {
+			audioRef.current.play();
+		}
+		setIsPlaying(!isPlaying); // Toggle the state
+	};
+
+	// Handle volume change
+	const handleVolumeChange = (e) => {
+		audioRef.current.volume = e.target.value;
+	};
+
 	const getProduct = () => {
 		const product = {
 			id: item.product_id,
@@ -11,22 +29,42 @@ const ProductCard = (props) => {
 			product_url: item.url,
 			product_price: item.price,
 		};
-		handleLookbookModalProducts(product);
+		// Handle any other logic here, like opening a modal or something else
 	};
 
 	return (
-		<Link onClick={getProduct} relative="path" className={`${item.id % 3 === 0 ? "col-span-2" : "col-span-1"}`}>
+		<Link onClick={getProduct} relative="path" className={`${item.product_id % 3 === 0 ? "col-span-2" : "col-span-1"}`}>
 			<div>
 				<div className="ripple-effect">
-					<img className="grayscale h-full w-full object-cover object-top" alt={item.product_name} src={item.url}></img>
+					<img className="grayscale h-full w-full object-cover object-top" alt={item.product_name} src={item.url} />
+					<br />
+					<i>
+						<small>{item.category}</small>
+					</i>
 				</div>
 
-				<div className=" rounded-lg flex flex-row justify-between pt-2">
+				<div className="rounded-lg flex flex-row justify-between pt-2">
 					<p>{item.product_name}</p>
 				</div>
-				<div className="flex flex-row justify-between pt-2 ">
-					<p>{item.price}</p>
+
+				{/* Custom Audio Controls */}
+				<div className="mt-2">
+					{/* Play/Pause Button */}
+					<button onClick={toggleAudio} className="mr-2 px-4 py-2 bg-blue-500 text-white rounded-md">
+						{isPlaying ? "Pause" : "Play"}
+					</button>
+
+					{/* Volume Control */}
+					<div className="flex items-center">
+						<label htmlFor="volume" className="mr-2">
+							Volume
+						</label>
+						<input type="range" id="volume" min="0" max="1" step="0.01" defaultValue="1" onChange={handleVolumeChange} className="w-24" />
+					</div>
 				</div>
+
+				{/* Audio Element */}
+				<audio ref={audioRef} src={props.audio ? props.audio : null} />
 			</div>
 		</Link>
 	);

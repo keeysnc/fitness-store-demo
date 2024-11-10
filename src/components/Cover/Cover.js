@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { coverStyles } from "./coverStyles";
 import Scene from "../Scenes/Scene";
-import ThreeGridLogos from "../Scenes/ThreeGridLogos";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,14 +12,16 @@ const Cover = () => {
 			id: 1,
 			text: (
 				<p>
+					Let the gentle flow of{" "}
+					<i>
+						<b>ambient sounds</b>
+					</i>{" "}
+					wash over you,
 					<b>
-						<i>Movement </i>
+						{" "}
+						<i>unlocking peace and boosting productivity</i>
 					</b>
-					is the key to unlocking your potential.{" "}
-					<b>
-						<i>Embrace it</i>{" "}
-					</b>
-					and watch yourself grow!
+					.
 				</p>
 			),
 		},
@@ -33,12 +34,12 @@ const Cover = () => {
 				<>
 					<h1>
 						<b>
-							Progress is built <i>one step, one rep, and one day</i> at a time.
+							Embrace <i>calm and balance</i> with the transformative power of soothing sounds.
 						</b>
 					</h1>
 					<br />
 					<br />
-					<p className="textUnderline text-[16px]">Digital Lookbook Curation [2024]</p>
+					<p className="textUnderline text-[16px]">Digital Soundbook Curation [2024]</p>
 				</>
 			),
 		},
@@ -47,15 +48,12 @@ const Cover = () => {
 			id: 7,
 			text: (
 				<p>
-					Every day you push yourself is a step closer to the{" "}
-					<b>
-						<i>stronger, healthier</i>
-					</b>{" "}
-					version of you. Embrace the challenge, enjoy the journey, and trust in the process—because the effort you put in today is shaping the
-					<b>
-						<i> champion you’ll be tomorrow</i>
-					</b>
-					.
+					<i>
+						<b>Ambient sounds</b>
+					</i>{" "}
+					create a soothing backdrop that drowns out distractions, helping you to focus deeply and sustain your energy throughout the day. Whether
+					it's the rustling of leaves, gentle rain, or soft instrumentals, these sounds engage your mind just enough to ease stress, inspire
+					creativity, and promote a steady, productive rhythm.
 				</p>
 			),
 		},

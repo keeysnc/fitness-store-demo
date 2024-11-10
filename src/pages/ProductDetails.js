@@ -31,7 +31,7 @@ const ProductDetails = () => {
 								</HalfLayout>
 								<HalfLayout>
 									<div className="product-details">
-										<Link to="/shop" onClick={returnToHome} className="cursor-pointer">
+										<Link to="/sounds" onClick={returnToHome} className="cursor-pointer">
 											{exitBtn()}
 										</Link>
 										<h4 className="text-h4">{item.product_name}</h4>
@@ -43,9 +43,6 @@ const ProductDetails = () => {
 											every workout, helping you look and feel your best.
 										</p>
 										<br />
-										<form>
-											<button className="text-black border-2 border-black px-8 mt-4 py-4">Checkout features coming soon</button>
-										</form>
 									</div>
 								</HalfLayout>
 							</div>

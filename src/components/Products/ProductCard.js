@@ -37,7 +37,6 @@ const ProductCard = (props) => {
 				</div>
 				<div className="flex flex-col pt-2">
 					<p ref={nameRef}>{item.product_name}</p>
-					<p ref={priceRef}>{item.price}</p>
 				</div>
 			</div>
 		</Link>

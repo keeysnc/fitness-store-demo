@@ -3,7 +3,7 @@ import { createPromoBanner } from "../../utils/utils";
 import { footerStyles } from "./footerStyles";
 
 const Footer = () => {
-	const promoText = "FORWARD MOTION";
+	const promoText = "AMBIENT SOUNDBOOK";
 
 	return (
 		<>
@@ -30,7 +30,7 @@ const Footer = () => {
 											animation: "rotateText 8s linear infinite",
 										}}
 									>
-										FORWARD MOTION
+										AMBIENT SOUNDBOOK
 									</textPath>
 								</text>
 

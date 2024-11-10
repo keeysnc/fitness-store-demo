@@ -18,11 +18,30 @@ const Home = () => {
 	const [attribute, setAttribute] = useState(null);
 	const [productInfo, setProductInfo] = useState(null);
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [playingAudioId, setPlayingAudioId] = useState(null);
 	const products = getProducts();
 
 	const videoRef = useRef(null);
 	const fadeInRefs = useRef([]);
 	fadeInRefs.current = [];
+
+	const handleAudioControl = (productId, audioRef) => {
+		if (playingAudioId && playingAudioId !== productId) {
+			// Pause the previous audio
+			const previousAudio = document.getElementById(`audio-${playingAudioId}`);
+			previousAudio.pause();
+			previousAudio.currentTime = 0; // Optionally reset to start
+		}
+
+		setPlayingAudioId(productId);
+
+		if (audioRef.current.paused) {
+			audioRef.current.play();
+		} else {
+			audioRef.current.pause();
+			setPlayingAudioId(null); // Reset the state if audio is paused
+		}
+	};
 
 	const addToRefs = (el) => {
 		if (el && !fadeInRefs.current.includes(el)) {
@@ -40,15 +59,11 @@ const Home = () => {
 		setAttribute(selectedAttribute);
 	};
 
-	const handleLookbookModalProducts = (item) => {
-		setProductInfo(item);
-	};
-
 	const mapProductsCards = products.map((item) => {
 		if (category === item.category || category === null || category === "All" || item.sizes.includes(attribute)) {
 			return (
 				<div ref={addToRefs} className="opacity-0" key={item.id} onClick={() => setIsModalOpen(true)}>
-					<LookBookCard handleLookbookModalProducts={handleLookbookModalProducts} item={item} />
+					<LookBookCard audio={item.audio} handleAudioControl={handleAudioControl} playingAudioId={playingAudioId} item={item} />
 				</div>
 			);
 		}
@@ -105,7 +120,7 @@ const Home = () => {
 				</defs>
 				<text fontSize="8" fontFamily="Bebas" fill="#a6a6a6">
 					<textPath href="#textPath" startOffset="0%" style={{ animation: "rotateText 8s linear infinite" }}>
-						ONE DAY AT A TIME | ONE REP AT A TIME | ONE DAY AT A TIME | ONE REP AT A TIME | ONE DAY AT A TIME
+						LET THE RIGHT SOUNDS FUEL YOUR FOCUS, PRODUCTIVITY AND CREATIVITY.
 					</textPath>
 				</text>
 				<style>{`
@@ -122,9 +137,9 @@ const Home = () => {
 
 			<div className="container pt-10 md:pt-20 px-4 mx-auto flex flex-col">
 				<ThreeForthLayout>
-					<Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+					{/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
 						<img src={productInfo?.product_url} alt={productInfo?.product_name} className="w-full h-full object-cover" />
-					</Modal>
+					</Modal> */}
 
 					<div className="grid gap-10 md:gap-20 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pb-10 md:pb-20">{mapProductsCards}</div>
 				</ThreeForthLayout>
@@ -137,11 +152,13 @@ const Home = () => {
 					<div className="grid gap-6 md:gap-10 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 mb-12 md:mb-24">
 						<div className="borderLines hidden md:block"></div>
 						<div className="col-span-2 px-4 md:px-20 text-center md:text-left">
-							<h1 className="text-xl md:text-3xl font-semibold">"Empower Your Wellness: Discover Balance, Strength, and a Healthier You"</h1>
+							<h1 className="text-xl md:text-3xl font-semibold">"Harmony for the Mind: Embracing Soothing Sounds for Enhanced Wellness"</h1>
 							<p className="pt-2 text-sm md:text-base">
-								Elevate Your Wellness Journey: Our apparel is designed to support your every move, empowering you to live a healthy, balanced, and
-								active lifestyle. Feel confident, comfortable, and motivated as you embrace wellness in style—because feeling good is the first step
-								to living well.
+								An exploration of the profound connection between sound and mental well-being. Soothing sounds, such as gentle nature noises, calming
+								music, or ambient white noise, have the power to reduce stress, improve focus, and create a peaceful environment that nurtures both
+								mind and body. Integrating these sounds into your daily routine can help ease anxiety, enhance relaxation, and foster a deeper sense
+								of calm. Whether used for meditation, studying, or simply unwinding after a long day, soothing sounds serve as a simple yet effective
+								tool in enhancing overall wellness and promoting a balanced, centered lifestyle.
 							</p>
 						</div>
 						<div className="borderLines hidden md:block"></div>

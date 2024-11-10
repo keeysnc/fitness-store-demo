@@ -22,10 +22,10 @@ const Shop = () => {
 		setCategory(selectedCategory);
 	};
 
-	const handleAttributeSort = (e) => {
-		const selectedAttribute = e.target.value;
-		setAttribute(selectedAttribute);
-	};
+	// const handleAttributeSort = (e) => {
+	// 	const selectedAttribute = e.target.value;
+	// 	setAttribute(selectedAttribute);
+	// };
 
 	// Filter products based on category or attribute
 	const mapProductsCards = products.map((item) => {
@@ -59,7 +59,7 @@ const Shop = () => {
 				{/* Sidebar */}
 				<OneForthLayout>
 					<h1 ref={titleRef} className="sidebar-title text-h1 text-2xl lg:text-3xl lg:text-left md:text-left sm:text-left">
-						SHOP
+						Sounds
 					</h1>
 					<div ref={filterRef} className="mt-4 md:mt-0">
 						<CategoryFilter handleCategorySort={handleCategorySort} />
